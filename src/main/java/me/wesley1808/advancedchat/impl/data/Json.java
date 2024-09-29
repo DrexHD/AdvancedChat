@@ -66,7 +66,7 @@ public class Json {
             if (json.isJsonPrimitive()) {
                 ResourceLocation location = ResourceLocation.tryParse(json.getAsString());
                 if (location != null) {
-                    return this.registry.get(location);
+                    return this.registry.getValue(location);
                 }
             }
             return null;
